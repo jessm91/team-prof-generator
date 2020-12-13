@@ -12,7 +12,7 @@ const teamMembers = [];
 function startingPrompt() {
     inquirer.prompt([
         {
-            message: "Enter team name",
+            message: "Enter team members name",
             name: "teamname"
         }
     ])
@@ -137,6 +137,7 @@ function addIntern() {
 };
 
 function compileTeam() {
+    console.log("//////////You've done it!!! Now give your team a raise.////////")
 
     const htmlArray = []
     const htmlBeginning = `
@@ -200,7 +201,7 @@ function compileTeam() {
     `
     htmlArray.push(htmlEnd);
 
-    fs.writeFile(`./dist/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err) {
+    fs.writeFile(`./generated-html/${finalTeamArray[0]}.html`, htmlArray.join(""), function (err) {
         
     })
 }
