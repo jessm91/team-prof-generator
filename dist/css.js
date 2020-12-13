@@ -9,13 +9,14 @@ body {
     align-items: center;
 }
 .banner-bar {
-    background-color: rgba(53, 124, 109, 0.842);
+    background-color: #FF0000;
     width: 100%;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
+    font-family: Verdana;
 }
 h1 {
     font-family: Bebas Neue;
@@ -49,15 +50,18 @@ h2 {
     width: 60vw;
 }
 .card-top {
-    background-color: rgb(228, 174, 76);
-    border: 2px solid rgb(228, 174, 76);
+    background-color: #0000FF;
+    border: #0000FF
+    color: white;
     width: 246px;
     border-top-left-radius: 10px;
+    font-family: Verdana;
 }
 .card-bottom {
     display: flex;
     flex-direction: column;
     align-content: center;
+    font-family: Verdana;
 }
 `
 
